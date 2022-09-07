@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D42C258028BB5B9F00259C0A /* Character+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257828BB5B9F00259C0A /* Character+CoreDataClass.swift */; };
+		D42C258128BB5B9F00259C0A /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257928BB5B9F00259C0A /* Character+CoreDataProperties.swift */; };
+		D42C258228BB5B9F00259C0A /* Dougu+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257A28BB5B9F00259C0A /* Dougu+CoreDataClass.swift */; };
+		D42C258328BB5B9F00259C0A /* Dougu+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257B28BB5B9F00259C0A /* Dougu+CoreDataProperties.swift */; };
+		D42C258428BB5B9F00259C0A /* Party+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257C28BB5B9F00259C0A /* Party+CoreDataClass.swift */; };
+		D42C258528BB5B9F00259C0A /* Party+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257D28BB5B9F00259C0A /* Party+CoreDataProperties.swift */; };
+		D42C258628BB5B9F00259C0A /* DouguTati+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257E28BB5B9F00259C0A /* DouguTati+CoreDataClass.swift */; };
+		D42C258728BB5B9F00259C0A /* DouguTati+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C257F28BB5B9F00259C0A /* DouguTati+CoreDataProperties.swift */; };
+		D4363BAD28AA721400B32C91 /* CharacterEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4363BAC28AA721400B32C91 /* CharacterEditor.swift */; };
+		D43BE39928BCBAD90071A262 /* DouguList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BE39828BCBAD90071A262 /* DouguList.swift */; };
+		D43BE39B28BCBCD00071A262 /* DouguEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BE39A28BCBCD00071A262 /* DouguEditor.swift */; };
+		D43BE39D28BCBEF30071A262 /* DouguDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BE39C28BCBEF30071A262 /* DouguDetail.swift */; };
+		D43BE3A028BDBDD00071A262 /* DouguNameEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BE39F28BDBDD00071A262 /* DouguNameEditor.swift */; };
+		D43BE3A228BDBE660071A262 /* DouguSpecialEffectEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BE3A128BDBE660071A262 /* DouguSpecialEffectEditor.swift */; };
+		D43BE3A428BDC04C0071A262 /* DouguSpecialEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BE3A328BDC04C0071A262 /* DouguSpecialEffectView.swift */; };
+		D4429E6628ACBDC40070C486 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4429E6528ACBDC40070C486 /* Persistence.swift */; };
+		D458326628BA183400F4F1E1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D458326428BA183400F4F1E1 /* Model.xcdatamodeld */; };
+		D458326828BA2BF800F4F1E1 /* CharacterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D458326728BA2BF800F4F1E1 /* CharacterPicker.swift */; };
+		D458326C28BB204A00F4F1E1 /* ZokuseiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D458326B28BB204A00F4F1E1 /* ZokuseiButton.swift */; };
+		D46DEF3128A8DE43003B69B4 /* PartyEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DEF3028A8DE43003B69B4 /* PartyEditor.swift */; };
+		D46DEF3728AA622A003B69B4 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DEF3628AA622A003B69B4 /* CharacterList.swift */; };
+		D46DEF3928AA6445003B69B4 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DEF3828AA6445003B69B4 /* CharacterDetail.swift */; };
+		D4826D7228BF4C4400B8AE1F /* DouguTatiEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4826D7128BF4C4400B8AE1F /* DouguTatiEditor.swift */; };
+		D4826D7428BF4C8900B8AE1F /* DouguTatiDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4826D7328BF4C8900B8AE1F /* DouguTatiDetail.swift */; };
+		D4826D7728BF55C900B8AE1F /* DouguPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4826D7628BF55C900B8AE1F /* DouguPicker.swift */; };
+		D4826D7928BF68FD00B8AE1F /* PartyOrDouguTatiEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4826D7828BF68FD00B8AE1F /* PartyOrDouguTatiEditor.swift */; };
+		D4826D7B28BF786B00B8AE1F /* DouguTatiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4826D7A28BF786B00B8AE1F /* DouguTatiPicker.swift */; };
+		D4826D8B28C8340500B8AE1F /* MaximizePartyAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4826D8A28C8340500B8AE1F /* MaximizePartyAttack.swift */; };
+		D4BEA9D328BB609600A5AA87 /* SpecialEffectEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BEA9D228BB609600A5AA87 /* SpecialEffectEnum.swift */; };
+		D4BEA9D528BCA9B000A5AA87 /* KakuseiEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BEA9D428BCA9B000A5AA87 /* KakuseiEditor.swift */; };
+		D4D3328E28BB25D400F436E5 /* CharacterNameEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D3328D28BB25D400F436E5 /* CharacterNameEditor.swift */; };
+		D4D3329028BB271700F436E5 /* CharacterPowerEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D3328F28BB271700F436E5 /* CharacterPowerEditor.swift */; };
+		D4D3329228BB2F0500F436E5 /* HabatuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D3329128BB2F0500F436E5 /* HabatuPicker.swift */; };
+		D4D3329628BB373200F436E5 /* SpecialEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D3329528BB373200F436E5 /* SpecialEffectView.swift */; };
+		D4D3329828BB3B4B00F436E5 /* SpecialEffectEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D3329728BB3B4B00F436E5 /* SpecialEffectEditor.swift */; };
+		D4F109C928A62C4100C22681 /* boku3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F109C828A62C4100C22681 /* boku3App.swift */; };
+		D4F109CB28A62C4100C22681 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F109CA28A62C4100C22681 /* ContentView.swift */; };
+		D4F109CD28A62C4300C22681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F109CC28A62C4300C22681 /* Assets.xcassets */; };
+		D4F109D028A62C4300C22681 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F109CF28A62C4300C22681 /* Preview Assets.xcassets */; };
+		D4F109D728A62D6B00C22681 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F109D628A62D6B00C22681 /* MainMenu.swift */; };
+		D4F109DD28A633B100C22681 /* PartyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F109DC28A633B100C22681 /* PartyDetail.swift */; };
+		D4F109E328A64DDC00C22681 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F109E228A64DDC00C22681 /* Level.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D42C257828BB5B9F00259C0A /* Character+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D42C257928BB5B9F00259C0A /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D42C257A28BB5B9F00259C0A /* Dougu+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dougu+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D42C257B28BB5B9F00259C0A /* Dougu+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dougu+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D42C257C28BB5B9F00259C0A /* Party+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Party+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D42C257D28BB5B9F00259C0A /* Party+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Party+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D42C257E28BB5B9F00259C0A /* DouguTati+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DouguTati+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D42C257F28BB5B9F00259C0A /* DouguTati+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DouguTati+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D4363BAC28AA721400B32C91 /* CharacterEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEditor.swift; sourceTree = "<group>"; };
+		D43BE39828BCBAD90071A262 /* DouguList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguList.swift; sourceTree = "<group>"; };
+		D43BE39A28BCBCD00071A262 /* DouguEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguEditor.swift; sourceTree = "<group>"; };
+		D43BE39C28BCBEF30071A262 /* DouguDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguDetail.swift; sourceTree = "<group>"; };
+		D43BE39F28BDBDD00071A262 /* DouguNameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguNameEditor.swift; sourceTree = "<group>"; };
+		D43BE3A128BDBE660071A262 /* DouguSpecialEffectEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguSpecialEffectEditor.swift; sourceTree = "<group>"; };
+		D43BE3A328BDC04C0071A262 /* DouguSpecialEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguSpecialEffectView.swift; sourceTree = "<group>"; };
+		D4429E6528ACBDC40070C486 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D458326528BA183400F4F1E1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D458326728BA2BF800F4F1E1 /* CharacterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPicker.swift; sourceTree = "<group>"; };
+		D458326B28BB204A00F4F1E1 /* ZokuseiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZokuseiButton.swift; sourceTree = "<group>"; };
+		D46DEF3028A8DE43003B69B4 /* PartyEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyEditor.swift; sourceTree = "<group>"; };
+		D46DEF3628AA622A003B69B4 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		D46DEF3828AA6445003B69B4 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
+		D4826D7128BF4C4400B8AE1F /* DouguTatiEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguTatiEditor.swift; sourceTree = "<group>"; };
+		D4826D7328BF4C8900B8AE1F /* DouguTatiDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguTatiDetail.swift; sourceTree = "<group>"; };
+		D4826D7628BF55C900B8AE1F /* DouguPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguPicker.swift; sourceTree = "<group>"; };
+		D4826D7828BF68FD00B8AE1F /* PartyOrDouguTatiEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyOrDouguTatiEditor.swift; sourceTree = "<group>"; };
+		D4826D7A28BF786B00B8AE1F /* DouguTatiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouguTatiPicker.swift; sourceTree = "<group>"; };
+		D4826D8A28C8340500B8AE1F /* MaximizePartyAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizePartyAttack.swift; sourceTree = "<group>"; };
+		D4BEA9D228BB609600A5AA87 /* SpecialEffectEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectEnum.swift; sourceTree = "<group>"; };
+		D4BEA9D428BCA9B000A5AA87 /* KakuseiEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakuseiEditor.swift; sourceTree = "<group>"; };
+		D4D3328D28BB25D400F436E5 /* CharacterNameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNameEditor.swift; sourceTree = "<group>"; };
+		D4D3328F28BB271700F436E5 /* CharacterPowerEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPowerEditor.swift; sourceTree = "<group>"; };
+		D4D3329128BB2F0500F436E5 /* HabatuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabatuPicker.swift; sourceTree = "<group>"; };
+		D4D3329528BB373200F436E5 /* SpecialEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectView.swift; sourceTree = "<group>"; };
+		D4D3329728BB3B4B00F436E5 /* SpecialEffectEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectEditor.swift; sourceTree = "<group>"; };
+		D4F109C528A62C4100C22681 /* boku3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boku3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F109C828A62C4100C22681 /* boku3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boku3App.swift; sourceTree = "<group>"; };
+		D4F109CA28A62C4100C22681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4F109CC28A62C4300C22681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4F109CF28A62C4300C22681 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4F109D628A62D6B00C22681 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		D4F109DC28A633B100C22681 /* PartyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetail.swift; sourceTree = "<group>"; };
+		D4F109E228A64DDC00C22681 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4F109C228A62C4100C22681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D43BE39E28BDBD9A0071A262 /* DouguDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D43BE39F28BDBDD00071A262 /* DouguNameEditor.swift */,
+				D43BE3A328BDC04C0071A262 /* DouguSpecialEffectView.swift */,
+				D43BE3A128BDBE660071A262 /* DouguSpecialEffectEditor.swift */,
+			);
+			path = DouguDetail;
+			sourceTree = "<group>";
+		};
+		D458326D28BB254000F4F1E1 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D4D3329128BB2F0500F436E5 /* HabatuPicker.swift */,
+				D4D3328F28BB271700F436E5 /* CharacterPowerEditor.swift */,
+				D4D3328D28BB25D400F436E5 /* CharacterNameEditor.swift */,
+				D458326B28BB204A00F4F1E1 /* ZokuseiButton.swift */,
+				D4D3329528BB373200F436E5 /* SpecialEffectView.swift */,
+				D4D3329728BB3B4B00F436E5 /* SpecialEffectEditor.swift */,
+				D4BEA9D428BCA9B000A5AA87 /* KakuseiEditor.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		D46DEF3A28AA6472003B69B4 /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				D46DEF3028A8DE43003B69B4 /* PartyEditor.swift */,
+				D4F109DC28A633B100C22681 /* PartyDetail.swift */,
+				D4826D8A28C8340500B8AE1F /* MaximizePartyAttack.swift */,
+				D4826D7A28BF786B00B8AE1F /* DouguTatiPicker.swift */,
+				D458326728BA2BF800F4F1E1 /* CharacterPicker.swift */,
+				D46DEF3B28AA648F003B69B4 /* Character */,
+				D4BEA9D628BCBA6600A5AA87 /* Dougu */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
+		D46DEF3B28AA648F003B69B4 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				D46DEF3628AA622A003B69B4 /* CharacterList.swift */,
+				D4363BAC28AA721400B32C91 /* CharacterEditor.swift */,
+				D46DEF3828AA6445003B69B4 /* CharacterDetail.swift */,
+				D458326D28BB254000F4F1E1 /* CharacterDetail */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		D4826D7528BF4C8D00B8AE1F /* DouguTati */ = {
+			isa = PBXGroup;
+			children = (
+				D4826D7128BF4C4400B8AE1F /* DouguTatiEditor.swift */,
+				D4826D7328BF4C8900B8AE1F /* DouguTatiDetail.swift */,
+				D4826D7628BF55C900B8AE1F /* DouguPicker.swift */,
+			);
+			path = DouguTati;
+			sourceTree = "<group>";
+		};
+		D4826D8928C7376C00B8AE1F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D42C257828BB5B9F00259C0A /* Character+CoreDataClass.swift */,
+				D42C257928BB5B9F00259C0A /* Character+CoreDataProperties.swift */,
+				D42C257A28BB5B9F00259C0A /* Dougu+CoreDataClass.swift */,
+				D42C257B28BB5B9F00259C0A /* Dougu+CoreDataProperties.swift */,
+				D42C257C28BB5B9F00259C0A /* Party+CoreDataClass.swift */,
+				D42C257D28BB5B9F00259C0A /* Party+CoreDataProperties.swift */,
+				D42C257E28BB5B9F00259C0A /* DouguTati+CoreDataClass.swift */,
+				D42C257F28BB5B9F00259C0A /* DouguTati+CoreDataProperties.swift */,
+				D458326428BA183400F4F1E1 /* Model.xcdatamodeld */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D4BEA9D628BCBA6600A5AA87 /* Dougu */ = {
+			isa = PBXGroup;
+			children = (
+				D43BE39828BCBAD90071A262 /* DouguList.swift */,
+				D43BE39A28BCBCD00071A262 /* DouguEditor.swift */,
+				D43BE39C28BCBEF30071A262 /* DouguDetail.swift */,
+				D43BE39E28BDBD9A0071A262 /* DouguDetail */,
+			);
+			path = Dougu;
+			sourceTree = "<group>";
+		};
+		D4F109BC28A62C4100C22681 = {
+			isa = PBXGroup;
+			children = (
+				D4F109C728A62C4100C22681 /* boku3 */,
+				D4F109C628A62C4100C22681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4F109C628A62C4100C22681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4F109C528A62C4100C22681 /* boku3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4F109C728A62C4100C22681 /* boku3 */ = {
+			isa = PBXGroup;
+			children = (
+				D4826D8928C7376C00B8AE1F /* Entity */,
+				D4F109E028A64D2600C22681 /* View */,
+				D4F109E128A64D4200C22681 /* Data */,
+				D4F109CC28A62C4300C22681 /* Assets.xcassets */,
+				D4F109CE28A62C4300C22681 /* Preview Content */,
+			);
+			path = boku3;
+			sourceTree = "<group>";
+		};
+		D4F109CE28A62C4300C22681 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4F109CF28A62C4300C22681 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4F109E028A64D2600C22681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4F109C828A62C4100C22681 /* boku3App.swift */,
+				D4F109CA28A62C4100C22681 /* ContentView.swift */,
+				D4F109D628A62D6B00C22681 /* MainMenu.swift */,
+				D4826D7828BF68FD00B8AE1F /* PartyOrDouguTatiEditor.swift */,
+				D4826D7528BF4C8D00B8AE1F /* DouguTati */,
+				D46DEF3A28AA6472003B69B4 /* Party */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4F109E128A64D4200C22681 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D4429E6528ACBDC40070C486 /* Persistence.swift */,
+				D4F109E228A64DDC00C22681 /* Level.swift */,
+				D4BEA9D228BB609600A5AA87 /* SpecialEffectEnum.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4F109C428A62C4100C22681 /* boku3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F109D328A62C4300C22681 /* Build configuration list for PBXNativeTarget "boku3" */;
+			buildPhases = (
+				D4F109C128A62C4100C22681 /* Sources */,
+				D4F109C228A62C4100C22681 /* Frameworks */,
+				D4F109C328A62C4100C22681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = boku3;
+			productName = boku3;
+			productReference = D4F109C528A62C4100C22681 /* boku3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4F109BD28A62C4100C22681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D4F109C428A62C4100C22681 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D4F109C028A62C4100C22681 /* Build configuration list for PBXProject "boku3" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4F109BC28A62C4100C22681;
+			productRefGroup = D4F109C628A62C4100C22681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4F109C428A62C4100C22681 /* boku3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4F109C328A62C4100C22681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F109D028A62C4300C22681 /* Preview Assets.xcassets in Resources */,
+				D4F109CD28A62C4300C22681 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4F109C128A62C4100C22681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43BE3A228BDBE660071A262 /* DouguSpecialEffectEditor.swift in Sources */,
+				D4826D7928BF68FD00B8AE1F /* PartyOrDouguTatiEditor.swift in Sources */,
+				D4826D7B28BF786B00B8AE1F /* DouguTatiPicker.swift in Sources */,
+				D4D3329828BB3B4B00F436E5 /* SpecialEffectEditor.swift in Sources */,
+				D4F109D728A62D6B00C22681 /* MainMenu.swift in Sources */,
+				D42C258328BB5B9F00259C0A /* Dougu+CoreDataProperties.swift in Sources */,
+				D46DEF3728AA622A003B69B4 /* CharacterList.swift in Sources */,
+				D46DEF3928AA6445003B69B4 /* CharacterDetail.swift in Sources */,
+				D4D3329628BB373200F436E5 /* SpecialEffectView.swift in Sources */,
+				D4BEA9D528BCA9B000A5AA87 /* KakuseiEditor.swift in Sources */,
+				D42C258228BB5B9F00259C0A /* Dougu+CoreDataClass.swift in Sources */,
+				D42C258628BB5B9F00259C0A /* DouguTati+CoreDataClass.swift in Sources */,
+				D4F109CB28A62C4100C22681 /* ContentView.swift in Sources */,
+				D4D3328E28BB25D400F436E5 /* CharacterNameEditor.swift in Sources */,
+				D43BE39928BCBAD90071A262 /* DouguList.swift in Sources */,
+				D4826D7428BF4C8900B8AE1F /* DouguTatiDetail.swift in Sources */,
+				D4826D8B28C8340500B8AE1F /* MaximizePartyAttack.swift in Sources */,
+				D4826D7228BF4C4400B8AE1F /* DouguTatiEditor.swift in Sources */,
+				D458326828BA2BF800F4F1E1 /* CharacterPicker.swift in Sources */,
+				D4826D7728BF55C900B8AE1F /* DouguPicker.swift in Sources */,
+				D458326628BA183400F4F1E1 /* Model.xcdatamodeld in Sources */,
+				D42C258128BB5B9F00259C0A /* Character+CoreDataProperties.swift in Sources */,
+				D42C258028BB5B9F00259C0A /* Character+CoreDataClass.swift in Sources */,
+				D4363BAD28AA721400B32C91 /* CharacterEditor.swift in Sources */,
+				D4429E6628ACBDC40070C486 /* Persistence.swift in Sources */,
+				D4D3329228BB2F0500F436E5 /* HabatuPicker.swift in Sources */,
+				D4F109C928A62C4100C22681 /* boku3App.swift in Sources */,
+				D458326C28BB204A00F4F1E1 /* ZokuseiButton.swift in Sources */,
+				D4D3329028BB271700F436E5 /* CharacterPowerEditor.swift in Sources */,
+				D42C258728BB5B9F00259C0A /* DouguTati+CoreDataProperties.swift in Sources */,
+				D43BE39B28BCBCD00071A262 /* DouguEditor.swift in Sources */,
+				D42C258428BB5B9F00259C0A /* Party+CoreDataClass.swift in Sources */,
+				D4BEA9D328BB609600A5AA87 /* SpecialEffectEnum.swift in Sources */,
+				D42C258528BB5B9F00259C0A /* Party+CoreDataProperties.swift in Sources */,
+				D4F109E328A64DDC00C22681 /* Level.swift in Sources */,
+				D43BE3A028BDBDD00071A262 /* DouguNameEditor.swift in Sources */,
+				D4F109DD28A633B100C22681 /* PartyDetail.swift in Sources */,
+				D46DEF3128A8DE43003B69B4 /* PartyEditor.swift in Sources */,
+				D43BE3A428BDC04C0071A262 /* DouguSpecialEffectView.swift in Sources */,
+				D43BE39D28BCBEF30071A262 /* DouguDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4F109D128A62C4300C22681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4F109D228A62C4300C22681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4F109D428A62C4300C22681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"boku3/Preview Content\"";
+				DEVELOPMENT_TEAM = NHWN4W7QFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = morita.boku3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4F109D528A62C4300C22681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"boku3/Preview Content\"";
+				DEVELOPMENT_TEAM = NHWN4W7QFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = morita.boku3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4F109C028A62C4100C22681 /* Build configuration list for PBXProject "boku3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F109D128A62C4300C22681 /* Debug */,
+				D4F109D228A62C4300C22681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F109D328A62C4300C22681 /* Build configuration list for PBXNativeTarget "boku3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F109D428A62C4300C22681 /* Debug */,
+				D4F109D528A62C4300C22681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D458326428BA183400F4F1E1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D458326528BA183400F4F1E1 /* Model.xcdatamodel */,
+			);
+			currentVersion = D458326528BA183400F4F1E1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D4F109BD28A62C4100C22681 /* Project object */;
+}
