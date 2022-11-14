@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Character" representedClassName="Character" syncable="YES">
+        <attribute name="attackTipe" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="habatu" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ikemenn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="kakusei" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="megami" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nyannko" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="powerPerSecond" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rerity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="spcialEffect1" optional="YES" attributeType="String"/>
+        <attribute name="spcialEffect1_amount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="spcialEffect2" optional="YES" attributeType="String"/>
+        <attribute name="spcialEffect2_amount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="spcialEffect3" optional="YES" attributeType="String"/>
+        <attribute name="spcialEffect3_amount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="spcialEffect4" optional="YES" attributeType="String"/>
+        <attribute name="spcialEffect4_amount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="party" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Party" inverseName="character" inverseEntity="Party"/>
+    </entity>
+    <entity name="Dougu" representedClassName="Dougu" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="powerUpForAll" optional="YES" attributeType="String"/>
+        <attribute name="powerUpForAllAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="specialE" optional="YES" attributeType="String"/>
+        <attribute name="specialE_amount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="dougutati" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DouguTati" inverseName="dougu" inverseEntity="DouguTati"/>
+    </entity>
+    <entity name="DouguTati" representedClassName="DouguTati" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="dougu" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dougu" inverseName="dougutati" inverseEntity="Dougu"/>
+        <relationship name="party" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Party" inverseName="dougutati" inverseEntity="Party"/>
+    </entity>
+    <entity name="Party" representedClassName="Party" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="previousTamadame" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="character" optional="YES" toMany="YES" maxCount="6" deletionRule="Nullify" destinationEntity="Character" inverseName="party" inverseEntity="Character"/>
+        <relationship name="dougutati" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DouguTati" inverseName="party" inverseEntity="DouguTati"/>
+    </entity>
+    <elements>
+        <element name="Character" positionX="0" positionY="0" width="128" height="329"/>
+        <element name="Dougu" positionX="0" positionY="0" width="128" height="149"/>
+        <element name="DouguTati" positionX="0" positionY="0" width="128" height="104"/>
+        <element name="Party" positionX="0" positionY="0" width="128" height="119"/>
+    </elements>
+</model>
